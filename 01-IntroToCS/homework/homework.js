@@ -5,7 +5,7 @@
 function BinarioADecimal(num) {
   // tu codigo aca
 
-  let sum = 0; // resultado decimal
+  let binario = 0; // resultado decimal
   let numReverse = num.split('').reverse().join(''); // binario al reves
 
   //valor binario: 1011
@@ -14,9 +14,9 @@ function BinarioADecimal(num) {
   //valor decimal = 1 * (2^0) + 1 * (2^1) + 0 * (2^2) + 1 * (2^3) = 11
 
   for (let i = 0; i < numReverse.length; i++) {
-     sum += numReverse[i] * 2 ** i;
+     binario += numReverse[i] * 2 ** i;
   }
-  return sum;
+  return binario;
   
 }
 
